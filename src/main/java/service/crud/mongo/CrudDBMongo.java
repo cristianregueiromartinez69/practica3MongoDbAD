@@ -35,7 +35,7 @@ public class CrudDBMongo {
      * Metodo que lee las colecciones de paises mongoDB
      * @return la lista con los datos de la colección
      */
-    public List<Map<String, Object>> getListaDePaises(String coleccion){
+    public List<Map<String, Object>> getListaColeccion(String coleccion){
 
         //establecemos la conexión y obtenemos la coleccion para luego que retorne esa colección en un ArrayList
         MongoDatabase mongoDatabase = MongoDBConnection.getConnectionMongoDB();
@@ -43,4 +43,6 @@ public class CrudDBMongo {
 
         return collectionPaises.find().into(new ArrayList<>());
     }
+
+
 }

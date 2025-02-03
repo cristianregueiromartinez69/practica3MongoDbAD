@@ -1,6 +1,5 @@
 import controller.Controller;
 
-import javax.naming.ldap.Control;
 
 public class Main {
 
