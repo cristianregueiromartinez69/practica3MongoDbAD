@@ -8,15 +8,31 @@ import java.util.List;
 
 public class CrudBases {
 
-    public void insertar10PokemonsInPokedex(List<Object> objectList){
+    public <T> void insertDataDB(List<T> list) {
         try (Session session = HibernateConfig.getSessionFactory().openSession()) {
-            Transaction transaction = session.beginTransaction();
 
-            for (Object object : objectList) {
+
+            Transaction tx = session.beginTransaction();
+
+            for (T object : list) {
                 session.save(object);
             }
-            transaction.commit();
-            System.out.println("Datos insertados correctamente en la base de datos");
+            tx.commit();
+            System.out.println("Datos guardados en la base de datos correctamente");
         }
     }
+
+    public <T> List<T> getDataFromDB(String query, Class<T> claseQuery) {
+        try (Session session = HibernateConfig.getSessionFactory().openSession()) {
+            Transaction tx = session.beginTransaction();
+
+            List<T> list = session.createQuery(query, claseQuery).getResultList();
+
+            tx.commit();
+
+            return list;
+        }
+    }
+
+
 }

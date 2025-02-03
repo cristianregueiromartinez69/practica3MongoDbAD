@@ -1,5 +1,9 @@
 package model.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
 import jakarta.persistence.*;
 import org.hibernate.annotations.ColumnDefault;
 
@@ -7,30 +11,40 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "xogadores")
+@JsonRootName(value = "Xogadores")
 public class Xogadores {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @ColumnDefault("nextval('xogadores_id_xogador_seq')")
     @Column(name = "id_xogador", nullable = false)
+    @JsonProperty("id")
+    @JsonIgnore
     private Integer id;
 
     @Column(name = "nome", length = 100)
+    @JsonProperty("nome")
     private String nome;
 
     @Column(name = "apelidos", length = 100)
+    @JsonProperty("apellidos")
     private String apelidos;
 
     @Column(name = "posicion", length = 100)
+    @JsonProperty("posicion")
     private String posicion;
 
     @Column(name = "data_nacemento")
+    @JsonProperty("fechaNacimiento")
     private LocalDate dataNacemento;
 
     @Column(name = "nacionalidade", length = 100)
+    @JsonProperty("nacionalidad")
     private String nacionalidade;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_equipo")
+    @JsonProperty("equipo")
+    @JsonBackReference
     private Equipo idEquipo;
 
     public Xogadores() {

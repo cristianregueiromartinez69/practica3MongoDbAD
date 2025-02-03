@@ -1,5 +1,6 @@
 package controller;
 
+import model.entity.Equipo;
 import service.crud.CrudBases;
 import service.metodospostgres.MetodosEquipo;
 import service.metodospostgres.MetodosJugador;
@@ -11,7 +12,10 @@ public class Controller {
         MetodosEquipo metodosEquipo = new MetodosEquipo();
         MetodosJugador metodosJugador = new MetodosJugador();
 
-        crudBases.insertar10PokemonsInPokedex(meto);
+        /*Inserccion de datos
+        crudBases.insertDataDB(metodosEquipo.creacionObjetosEquipos());
+        crudBases.insertDataDB(metodosJugador.creacionObjetosJugadores(crudBases.getDataFromDB("FROM Equipo", Equipo.class)));
+         */
     }
 
 }

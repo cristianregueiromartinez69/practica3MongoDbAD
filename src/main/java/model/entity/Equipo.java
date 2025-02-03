@@ -1,5 +1,9 @@
 package model.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
 import jakarta.persistence.*;
 import org.hibernate.annotations.ColumnDefault;
 
@@ -8,20 +12,27 @@ import java.util.Set;
 
 @Entity
 @Table(name = "equipos")
+@JsonRootName(value = "Equipos")
 public class Equipo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @ColumnDefault("nextval('equipos_id_equipo_seq')")
     @Column(name = "id_equipo", nullable = false)
+    @JsonProperty("id")
+    @JsonIgnore
     private Integer id;
 
     @Column(name = "nome", length = 100)
+    @JsonProperty("nome")
     private String nome;
 
     @Column(name = "cidade", length = 100)
+    @JsonProperty("cidade")
     private String cidade;
 
     @OneToMany(mappedBy = "idEquipo")
+    @JsonProperty("xogadores")
+    @JsonManagedReference
     private Set<Xogadores> xogadores = new LinkedHashSet<>();
 
     public Equipo(Integer id, String nome, String cidade, Set<Xogadores> xogadores) {
