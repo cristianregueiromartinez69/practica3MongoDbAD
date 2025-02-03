@@ -1,4 +1,4 @@
-package service.crud;
+package service.crud.postgres;
 
 import config.HibernateConfig;
 import org.hibernate.Session;
@@ -6,7 +6,7 @@ import org.hibernate.Transaction;
 
 import java.util.List;
 
-public class CrudBases {
+public class CrudDbPostgres {
 
     public <T> void insertDataDB(List<T> list) {
         try (Session session = HibernateConfig.getSessionFactory().openSession()) {
@@ -33,6 +33,8 @@ public class CrudBases {
             return list;
         }
     }
+
+
 
 
 }
