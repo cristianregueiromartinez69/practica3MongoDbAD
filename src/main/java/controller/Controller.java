@@ -20,10 +20,16 @@ public class Controller {
         crudBases.insertDataDB(metodosJugador.creacionObjetosJugadores(crudBases.getDataFromDB("FROM Equipo", Equipo.class)));
          */
 
-
-        //elJson.writeFileJson(crudBases.getDataFromDB("FROM Equipo", Equipo.class), "equipos");
-
+        /* Escritura en JSON
+        elJson.writeFileJson(crudBases.getDataFromDB("FROM Equipo", Equipo.class), "equipos");
         elJson.writeFileJson(crudBases.getDataFromDB("FROM Xogadores", Xogadores.class), "xogadores");
+         */
+
+        /*Lectura fichero JSON
+        elJson.auxReadObjects(elJson.readFileJson("equipos.json"));
+        elJson.auxReadObjects(elJson.readFileJson("xogadores.json"));
+         */
     }
+
 
 }
