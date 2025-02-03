@@ -1,0 +1,101 @@
+[ {
+  "nome" : "Real madrid",
+  "cidade" : "España",
+  "xogadores" : [ {
+    "nome" : "Kylian",
+    "apellidos" : "Mbappé Lottin",
+    "posicion" : "Delantero",
+    "fechaNacimiento" : [ 1998, 12, 20 ],
+    "nacionalidad" : "Francia"
+  } ]
+}, {
+  "nome" : "Barcelona",
+  "cidade" : "España",
+  "xogadores" : [ {
+    "nome" : "Lamine Yamal",
+    "apellidos" : "Nasraoui Ebana",
+    "posicion" : "Delantero",
+    "fechaNacimiento" : [ 2007, 7, 13 ],
+    "nacionalidad" : "Español"
+  } ]
+}, {
+  "nome" : "Milan",
+  "cidade" : "Italia",
+  "xogadores" : [ {
+    "nome" : "Rafael Alexandre",
+    "apellidos" : "Conceição Leão",
+    "posicion" : "Delantero",
+    "fechaNacimiento" : [ 1999, 6, 10 ],
+    "nacionalidad" : "Portugal"
+  } ]
+}, {
+  "nome" : "Borrusia Dortmund",
+  "cidade" : "Alemania",
+  "xogadores" : [ {
+    "nome" : "Emre",
+    "apellidos" : "Can",
+    "posicion" : "Centrocampista",
+    "fechaNacimiento" : [ 1994, 1, 12 ],
+    "nacionalidad" : "Alemania"
+  } ]
+}, {
+  "nome" : "Santos F.C.",
+  "cidade" : "Brasil",
+  "xogadores" : [ {
+    "nome" : "Neymar da Silva",
+    "apellidos" : "Santos Júnior",
+    "posicion" : "Delantero",
+    "fechaNacimiento" : [ 1992, 2, 5 ],
+    "nacionalidad" : "Brasil"
+  } ]
+}, {
+  "nome" : "Olimpique de Marsella",
+  "cidade" : "Francia",
+  "xogadores" : [ {
+    "nome" : "Adrien",
+    "apellidos" : "Rabiot-Provost",
+    "posicion" : "Centrocampista",
+    "fechaNacimiento" : [ 1995, 4, 3 ],
+    "nacionalidad" : "Francia"
+  } ]
+}, {
+  "nome" : "Boca Juniors",
+  "cidade" : "Argentina",
+  "xogadores" : [ {
+    "nome" : "Sergio",
+    "apellidos" : "Germán Romero",
+    "posicion" : "Portero",
+    "fechaNacimiento" : [ 1987, 2, 22 ],
+    "nacionalidad" : "Argentina"
+  } ]
+}, {
+  "nome" : "Inter de Miami",
+  "cidade" : "Estados Unidos",
+  "xogadores" : [ {
+    "nome" : "Jordi",
+    "apellidos" : "Alba Ramos",
+    "posicion" : "Defensa",
+    "fechaNacimiento" : [ 1989, 3, 21 ],
+    "nacionalidad" : "Español"
+  } ]
+}, {
+  "nome" : "Liverpool",
+  "cidade" : "Inglaterra",
+  "xogadores" : [ {
+    "nome" : "Mohamed Salah",
+    "apellidos" : "Hamed Mahrous Ghaly",
+    "posicion" : "Delantero",
+    "fechaNacimiento" : [ 1992, 6, 15 ],
+    "nacionalidad" : "Egipto"
+  } ]
+}, {
+  "nome" : "Ajax",
+  "cidade" : "Países Bajos",
+  "xogadores" : [ {
+    "nome" : "Daniele",
+    "apellidos" : "Rugani",
+    "posicion" : "Defensa",
+    "fechaNacimiento" : [ 1994, 7, 29 ],
+    "nacionalidad" : "Italia"
+  } ]
+} ]

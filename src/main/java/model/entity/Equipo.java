@@ -30,7 +30,7 @@ public class Equipo {
     @JsonProperty("cidade")
     private String cidade;
 
-    @OneToMany(mappedBy = "idEquipo")
+    @OneToMany(mappedBy = "idEquipo", fetch = FetchType.EAGER)
     @JsonProperty("xogadores")
     @JsonManagedReference
     private Set<Xogadores> xogadores = new LinkedHashSet<>();
