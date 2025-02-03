@@ -1,5 +1,7 @@
 package controller;
 
+import model.entity.Equipo;
+import model.entity.Xogadores;
 import service.crud.metodosmongo.LecturaDatos;
 import service.crud.mongo.CrudDBMongo;
 import service.crud.postgres.CrudDbPostgres;
@@ -9,7 +11,6 @@ import service.metodospostgres.MetodosJugador;
 
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 
 public class Controller {
 
@@ -26,18 +27,18 @@ public class Controller {
         crudBases.insertDataDB(metodosJugador.creacionObjetosJugadores(crudBases.getDataFromDB("FROM Equipo", Equipo.class)));
          */
 
-        /* Escritura en JSON
+
         elJson.writeFileJson(crudBases.getDataFromDB("FROM Equipo", Equipo.class), "equipos");
         elJson.writeFileJson(crudBases.getDataFromDB("FROM Xogadores", Xogadores.class), "xogadores");
-         */
 
 
-        /* Insercciones en mongoDB
+
+
         List<Map<String, Object>> equiposList = elJson.readDataJson("equipos.json");
         List<Map<String, Object>> jugadorList = elJson.readDataJson("xogadores.json");
 
         crudMongo.insertColecctionDb(equiposList, jugadorList);
-         */
+
         lecturaDatos.lecturaDatosEquipos(crudMongo.getListaColeccion("equipos"));
         lecturaDatos.lecturaDatosJugadores(crudMongo.getListaColeccion("jugadores"));
 

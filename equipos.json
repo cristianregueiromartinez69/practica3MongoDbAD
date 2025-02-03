@@ -5,7 +5,7 @@
     "nome" : "Kylian",
     "apellidos" : "Mbappé Lottin",
     "posicion" : "Delantero",
-    "fechaNacimiento" : [ 1998, 12, 20 ],
+    "fechaNacimiento" : "1998-12-20",
     "nacionalidad" : "Francia"
   } ]
 }, {
@@ -15,7 +15,7 @@
     "nome" : "Lamine Yamal",
     "apellidos" : "Nasraoui Ebana",
     "posicion" : "Delantero",
-    "fechaNacimiento" : [ 2007, 7, 13 ],
+    "fechaNacimiento" : "2007-07-13",
     "nacionalidad" : "Español"
   } ]
 }, {
@@ -25,7 +25,7 @@
     "nome" : "Rafael Alexandre",
     "apellidos" : "Conceição Leão",
     "posicion" : "Delantero",
-    "fechaNacimiento" : [ 1999, 6, 10 ],
+    "fechaNacimiento" : "1999-06-10",
     "nacionalidad" : "Portugal"
   } ]
 }, {
@@ -35,7 +35,7 @@
     "nome" : "Emre",
     "apellidos" : "Can",
     "posicion" : "Centrocampista",
-    "fechaNacimiento" : [ 1994, 1, 12 ],
+    "fechaNacimiento" : "1994-01-12",
     "nacionalidad" : "Alemania"
   } ]
 }, {
@@ -45,7 +45,7 @@
     "nome" : "Neymar da Silva",
     "apellidos" : "Santos Júnior",
     "posicion" : "Delantero",
-    "fechaNacimiento" : [ 1992, 2, 5 ],
+    "fechaNacimiento" : "1992-02-05",
     "nacionalidad" : "Brasil"
   } ]
 }, {
@@ -55,7 +55,7 @@
     "nome" : "Adrien",
     "apellidos" : "Rabiot-Provost",
     "posicion" : "Centrocampista",
-    "fechaNacimiento" : [ 1995, 4, 3 ],
+    "fechaNacimiento" : "1995-04-03",
     "nacionalidad" : "Francia"
   } ]
 }, {
@@ -65,7 +65,7 @@
     "nome" : "Sergio",
     "apellidos" : "Germán Romero",
     "posicion" : "Portero",
-    "fechaNacimiento" : [ 1987, 2, 22 ],
+    "fechaNacimiento" : "1987-02-22",
     "nacionalidad" : "Argentina"
   } ]
 }, {
@@ -75,7 +75,7 @@
     "nome" : "Jordi",
     "apellidos" : "Alba Ramos",
     "posicion" : "Defensa",
-    "fechaNacimiento" : [ 1989, 3, 21 ],
+    "fechaNacimiento" : "1989-03-21",
     "nacionalidad" : "Español"
   } ]
 }, {
@@ -85,7 +85,7 @@
     "nome" : "Mohamed Salah",
     "apellidos" : "Hamed Mahrous Ghaly",
     "posicion" : "Delantero",
-    "fechaNacimiento" : [ 1992, 6, 15 ],
+    "fechaNacimiento" : "1992-06-15",
     "nacionalidad" : "Egipto"
   } ]
 }, {
@@ -95,7 +95,7 @@
     "nome" : "Daniele",
     "apellidos" : "Rugani",
     "posicion" : "Defensa",
-    "fechaNacimiento" : [ 1994, 7, 29 ],
+    "fechaNacimiento" : "1994-07-29",
     "nacionalidad" : "Italia"
   } ]
 } ]
