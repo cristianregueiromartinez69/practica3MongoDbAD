@@ -5,8 +5,17 @@ import model.entity.Equipo;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase auxiliar para insertar datos en la tablas de postgresSQL
+ * @author cristian
+ * @version 1.0
+ */
 public class MetodosEquipo {
 
+    /**
+     * Metodo que crea los objetos y devuelve una lista de esos objetos
+     * @return la lista de objetos
+     */
     public List<Equipo> creacionObjetosEquipos(){
         List<Equipo> equipos = new ArrayList<>();
 
@@ -27,6 +36,20 @@ public class MetodosEquipo {
 
     }
 
+    /**
+     * metodo auxiliar para añadir elementos a la lista
+     * @param equipos la lista de equipos
+     * @param equipo1 el 1º equipo
+     * @param equipo2 el 2º equipo
+     * @param equipo3 el 3º equipo
+     * @param equipo4 el 4º equipo
+     * @param equipo5 el 5º equipo
+     * @param equipo6 el 6º equipo
+     * @param equipo7 el 7º equipo
+     * @param equipo8 el 8º equipo
+     * @param equipo9 el 9º equipo
+     * @param equipo10 el 10º equipo
+     */
     private void insertValuesList(List<Equipo> equipos, Equipo equipo1, Equipo equipo2, Equipo equipo3, Equipo equipo4, Equipo equipo5, Equipo equipo6, Equipo equipo7, Equipo equipo8, Equipo equipo9, Equipo equipo10) {
         equipos.add(equipo1);
         equipos.add(equipo2);

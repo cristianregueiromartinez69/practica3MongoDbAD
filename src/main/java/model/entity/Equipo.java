@@ -10,10 +10,17 @@ import org.hibernate.annotations.ColumnDefault;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+/**
+ * Clase entity de equipos para mapearla con la tabla de la base de datos d epostgresSQL
+ * @author cristian
+ * @version 1.0
+ */
 @Entity
 @Table(name = "equipos")
 @JsonRootName(value = "Equipos")
 public class Equipo {
+
+    //clave primaria que e sun entero serial(se genera automáticamente)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @ColumnDefault("nextval('equipos_id_equipo_seq')")
@@ -22,19 +29,29 @@ public class Equipo {
     @JsonIgnore
     private Integer id;
 
+    //nombre del equipo, es un String
     @Column(name = "nome", length = 100)
     @JsonProperty("nome")
     private String nome;
 
+    //ciudad del equipo, es un String
     @Column(name = "cidade", length = 100)
     @JsonProperty("cidade")
     private String cidade;
 
+    //lista de jugadores que tiene el equipo
     @OneToMany(mappedBy = "idEquipo", fetch = FetchType.EAGER)
     @JsonProperty("xogadores")
     @JsonManagedReference
     private Set<Xogadores> xogadores = new LinkedHashSet<>();
 
+    /**
+     * Constructor de la clase
+     * @param id la clave primaria que es un Integer
+     * @param nome el nombre del equipo que es un String
+     * @param cidade la ciudad del equipo que es un String
+     * @param xogadores la lista de jugadores que es un Set
+     */
     public Equipo(Integer id, String nome, String cidade, Set<Xogadores> xogadores) {
         this.id = id;
         this.nome = nome;
@@ -57,6 +74,10 @@ public class Equipo {
 
     }
 
+    /**
+     * getter y setter de la clase
+     * @return los atributos correspondientes
+     */
     public Integer getId() {
         return id;
     }
@@ -89,6 +110,10 @@ public class Equipo {
         this.xogadores = xogadores;
     }
 
+    /**
+     * Metodo toString de la clase
+     * @return información del equipo
+     */
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

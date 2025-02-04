@@ -4,6 +4,11 @@ import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoDatabase;
 
+/**
+ * Clase que sirve para establecer la conexion con la base de datos de mongoDB
+ * @author cristian
+ * @version 1.0
+ */
 public class MongoDBConnection {
 
     /**

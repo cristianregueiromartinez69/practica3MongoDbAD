@@ -7,8 +7,18 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase auxiliar para insertar datos en la tablas de mongoDB
+ * @author cristian
+ * @version 1.0
+ */
 public class MetodosJugador {
 
+    /**
+     * Metodo para crear los objetos jugadores
+     * @param equiposList la lista de equipos que leemos de la base de datos
+     * @return la lista de jugadores
+     */
     public List<Xogadores> creacionObjetosJugadores(List<Equipo> equiposList){
         List<Xogadores> xogadoresList = new ArrayList<>();
 
@@ -28,6 +38,20 @@ public class MetodosJugador {
         return xogadoresList;
     }
 
+    /**
+     * metodo auxiliar para añadir jugadores a la lista
+     * @param xogadoresList la lista de jugadores
+     * @param xogador1 el 1º jugador
+     * @param xogador2 el 2º jugador
+     * @param xogador3 el 3º jugador
+     * @param xogador4 el 4º jugador
+     * @param xogador5 el 5º jugador
+     * @param xogador6 el 6º jugador
+     * @param xogador7 el 7º jugador
+     * @param xogador8 el 8º jugador
+     * @param xogador9 el 9º jugador
+     * @param xogador10 el 10º jugador
+     */
     private static void insertValuesXogadores(List<Xogadores> xogadoresList, Xogadores xogador1, Xogadores xogador2, Xogadores xogador3, Xogadores xogador4, Xogadores xogador5, Xogadores xogador6, Xogadores xogador7, Xogadores xogador8, Xogadores xogador9, Xogadores xogador10) {
         xogadoresList.add(xogador1);
         xogadoresList.add(xogador2);
